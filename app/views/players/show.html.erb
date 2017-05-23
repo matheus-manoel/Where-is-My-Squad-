@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Steam link:</strong>
+  <%= @player.steam_link %>
+</p>
+
+<p>
+  <strong>Nick:</strong>
+  <%= @player.nick %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @player.description %>
+</p>
+
+<p>
+  <strong>Server:</strong>
+  <%= @player.server %>
+</p>
+
+<%= link_to 'Edit', edit_player_path(@player) %> |
+<%= link_to 'Back', players_path %>
