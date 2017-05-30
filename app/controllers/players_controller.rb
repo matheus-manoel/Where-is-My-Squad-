@@ -7,23 +7,35 @@ class PlayersController < ApplicationController
     @players = Player.all.order(created_at: :desc)
   end
 
-=begin
-  # GET /players/1
-  # GET /players/1.json
-  def show
+  def NA
+    @players = Player.NA
+    render action: :index
   end
-=end
+
+  def EU
+    @players = Player.EU
+    render action: :index
+  end
+
+  def SA
+    @players = Player.SA
+    render action: :index
+  end
+
+  def AS
+    @players = Player.AS
+    render action: :index
+  end
+
+  def OC
+    @players = Player.OC
+    render action: :index
+  end
 
   # GET /players/new
   def new
     @player = Player.new
   end
-
-=begin
-  # GET /players/1/edit
-  def edit
-  end
-=end
 
   # POST /players
   # POST /players.json
