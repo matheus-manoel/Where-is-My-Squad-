@@ -7,10 +7,12 @@ class PlayersController < ApplicationController
     @players = Player.all
   end
 
+=begin
   # GET /players/1
   # GET /players/1.json
   def show
   end
+=end
 
   # GET /players/new
   def new
@@ -30,7 +32,7 @@ class PlayersController < ApplicationController
 
     respond_to do |format|
       if @player.save
-        format.html { redirect_to @player, notice: 'Player was successfully created.' }
+        format.html { redirect_to action: "index", notice: 'Player was successfully created.' }
         format.json { render :show, status: :created, location: @player }
       else
         format.html { render :new }
