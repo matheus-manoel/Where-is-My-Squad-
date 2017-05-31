@@ -5,30 +5,36 @@ class PlayersController < ApplicationController
   # GET /players.json
   def index
     @players = Player.all.order(created_at: :desc)
+    @server = 'all'
   end
 
   def NA
-    @players = Player.NA
+    @players = Player.NA.order(created_at: :desc)
+    @server = 'NA'
     render action: :index
   end
 
   def EU
-    @players = Player.EU
+    @players = Player.EU.order(created_at: :desc)
+    @server = 'EU'
     render action: :index
   end
 
   def SA
-    @players = Player.SA
+    @players = Player.SA.order(created_at: :desc)
+    @server = 'SA'
     render action: :index
   end
 
   def AS
-    @players = Player.AS
+    @players = Player.AS.order(created_at: :desc)
+    @server = 'AS'
     render action: :index
   end
 
   def OC
-    @players = Player.OC
+    @players = Player.OC.order(created_at: :desc)
+    @server = 'OC'
     render action: :index
   end
 

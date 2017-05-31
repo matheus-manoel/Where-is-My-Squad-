@@ -5,17 +5,65 @@
     <div class="row">
         <div class="col-md-12">
             <h1 class="page-header">Players
-                <small>All Servers</small>
+              <small>
+                <% if @server == 'all'%>
+                  <b>
+                <% end %>
+                <a href="/players">All Servers</a>
+                <% if @server == 'all'%>
+                  </b>
+                <% end %>
+              </small>
                 <small> | </small>
-                <small><a href="/players/NA">NA</a></small>
+                <small>
+                  <% if @server == 'NA'%>
+                    <b>
+                  <% end %>
+                  <a href="/players/NA">NA</a>
+                  <% if @server == 'NA'%>
+                    </b>
+                  <% end %>
+                </small>
                 <small> | </small>
-                <small><a href="/players/EU">EU</a></small>
+                <small>
+                  <% if @server == 'EU'%>
+                    <b>
+                  <% end %>
+                  <a href="/players/EU">EU</a>
+                  <% if @server == 'EU'%>
+                    </b>
+                  <% end %>
+                </small>
                 <small> | </small>
-                <small><a href="/players/SA">SA</a></small>
+                <small>
+                  <% if @server == 'SA'%>
+                    <b>
+                  <% end %>
+                  <a href="/players/SA">SA</a>
+                  <% if @server == 'SA'%>
+                    </b>
+                  <% end %>
+                </small>
                 <small> | </small>
-                <small><a href="/players/AS">AS</a></small>
+                <small>
+                  <% if @server == 'AS'%>
+                    <b>
+                  <% end %>
+                  <a href="/players/AS">AS</a>
+                  <% if @server == 'AS'%>
+                    </b>
+                  <% end %>
+                </small>
                 <small> | </small>
-                <small><a href="/players/OC">OC</a></small>
+                <small>
+                  <% if @server == 'OC'%>
+                    <b>
+                  <% end %>
+                  <a href="/players/OC">OC</a>
+                  <% if @server == 'OC'%>
+                    </b>
+                  <% end %>
+                </small>
                 <small class="pull-right">
                   <a class="btn btn-success"
                   href="/players/new" role="button">Add yourself as a player!</a>
