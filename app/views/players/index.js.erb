@@ -1,0 +1,7 @@
+$('#players').append('<%= j render(@players) %>');
+<% if @players.next_page %>
+  $('.pagination').replaceWith('<%= j will_paginate(@players) %>');
+<% else %>
+  $('.pagination').remove();
+<% end %>
+<% sleep 1 %>

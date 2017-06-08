@@ -1,0 +1,16 @@
+<% @players.each_slice(3) do |players| %>
+<div class="row">
+    <% players.each do |player| %>
+    <div class="col-sm-4 portfolio-item">
+        <!--<a href="#">
+            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+        </a>-->
+        <h3>
+            <a target="_blank" href=<%= player.steam_link %>><%= player.nick %></a>
+        </h3>
+        <p><b>Server: </b><%= player.server %></p>
+        <p class="line"><%= player.description %></p>
+    </div>
+    <% end %>
+</div>
+<% end %>
