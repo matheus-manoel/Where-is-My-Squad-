@@ -1,24 +1,25 @@
-# README
+# Where is my Squad?
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Where is my Squad? is a rails web built for players of PUBG find other
+players who want to play the game as a team.
 
-Things you may want to cover:
+## Contributing
+Feel free to send pull requests. I want the app to be built by anyone
+who wants to help the community.
 
-* Ruby version
+## To do list
+- Add language to players.
+- Filter by language and servers.
+- Add communication id to players (skype, discord, teamspeak).
 
-* System dependencies
+Email whereismysquad.web@gmail.com to send suggestions.
 
-* Configuration
+## LICENSE
 
-* Database creation
+GNU General Public License v3.0
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Permissions of this strong copyleft license are conditioned on making
+available complete source code of licensed works and modifications,
+which include larger works using a licensed work, under the same
+license. Copyright and license notices must be preserved. Contributors
+provide an express grant of patent rights.
