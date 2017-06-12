@@ -1,6 +1,6 @@
 # Where is my Squad?
 
-Where is my Squad? is a rails web built for players of PUBG find other
+Where is my Squad? is a rails app built for players of PUBG find other
 players who want to play the game as a team.
 
 ## Contributing
@@ -14,7 +14,7 @@ who wants to help the community.
 
 Email whereismysquad.web@gmail.com to send suggestions.
 
-## LICENSE
+## License
 
 GNU General Public License v3.0
 
